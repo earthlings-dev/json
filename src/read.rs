@@ -305,10 +305,10 @@ where
 
     #[cfg(feature = "raw_value")]
     fn discard(&mut self) {
-        if let Some(ch) = self.ch.take() {
-            if let Some(buf) = &mut self.raw_buffer {
-                buf.push(ch);
-            }
+        if let Some(ch) = self.ch.take()
+            && let Some(buf) = &mut self.raw_buffer
+        {
+            buf.push(ch);
         }
     }
 
