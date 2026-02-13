@@ -9,7 +9,7 @@ edition = "2024"
 keywords = ["json", "serde", "serialization"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/serde-rs/json"
-rust-version = "1.93.0"
+rust-version = "1.93"
 
 [workspace]
 members = [".", "tests/crate"]
@@ -27,7 +27,7 @@ serde = { version = "1.0.228", default-features = false, features = ["derive"] }
 serde_bytes = { version = "0.11.19" }
 serde_core = { version = "1.0.228", default-features = false }
 serde_derive = { version = "1.0.228" }
-serde_json = { path = ".", default-features = false }
+serde_json = { version = "1.0.149", path = ".", default-features = false }
 serde_stacker = { version = "0.1.14" }
 trybuild = { version = "1.0.116", features = ["diff"] }
 zmij = { version = "1.0" }
@@ -69,9 +69,9 @@ features = ["float_roundtrip", "raw_value", "unbounded_depth"]
 
 
 [patch.crates-io]
-serde = { git = "ssh://git@github.com/earthlings-dev/serde.git" }
-serde_core = { git = "ssh://git@github.com/earthlings-dev/serde.git" }
-serde_derive = { git = "ssh://git@github.com/earthlings-dev/serde.git" }
+serde = { git = "https://github.com/earthlings-dev/serde.git" }
+serde_core = { git = "https://github.com/earthlings-dev/serde.git" }
+serde_derive = { git = "https://github.com/earthlings-dev/serde.git" }
 
 
 ### FEATURES #################################################################
