@@ -241,7 +241,7 @@ impl Display for Value {
         fn io_error(_: fmt::Error) -> io::Error {
             // Error value does not matter because Display impl just maps it
             // back to fmt::Error.
-            io::Error::other("fmt error")
+            io::Error::new(io::ErrorKind::Other, "fmt error")
         }
 
         let alternate = f.alternate();

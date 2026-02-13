@@ -69,9 +69,9 @@ features = ["float_roundtrip", "raw_value", "unbounded_depth"]
 
 
 [patch.crates-io]
-serde = { path = "../serde/serde" }
-serde_core = { path = "../serde/serde_core" }
-serde_derive = { path = "../serde/serde_derive" }
+serde = { git = "ssh://git@github.com/earthlings-dev/serde.git" }
+serde_core = { git = "ssh://git@github.com/earthlings-dev/serde.git" }
+serde_derive = { git = "ssh://git@github.com/earthlings-dev/serde.git" }
 
 
 ### FEATURES #################################################################
